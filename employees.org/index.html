@@ -1,0 +1,455 @@
+<html>
+<head>
+<title>Employees.org</title>
+  <style type="text/css">
+    .up {color: #090}
+    .down {color: #c00}
+    .na {color: #ccc}
+    pre {background-color: #eee; padding: 8px 2px;}
+  </style>
+</head>
+<body>
+  <center><pre style="background-color:#0000;">
+                                                                    |
+                                                                   /|
+  _                 _                        _______I_I_I_________/ |
+ | |               | |                 D====/ ____________________  |
+ | |__  _   _  __ _| | ___                  ||   __| | | |___  || \ |
+ | '_ \| | | |/ _` | |/ _ \                 \\__[_=|_[[|_|==_]_//  \|
+ | |_) | |_| | (_| | |  __/                  \_________________/    |
+ |_.__/ \__,_|\__, |_|\___|.employees.org                            
+               __/ |                                                 
+              |___/                                                  
+</pre></center>
+
+<div style="background-color: #f99; padding: 5px 10px">
+  <h3>Service status</h3>
+  <p>We have expereienced a chrash of the storage that hosts the accordion.employees.org virtual machine and is unrecoverable. We are in the process of restoring what backups we have, but there appears to be some corruption there as well, so we may not be able to restore everything. We have a new system up and running <em>bugle.employees.org</em> that will also answer to the accordion.emloyees.org hostname and IP.</p>
+  <p>All users are reminded of the note below -- we do not back up user data.</p>
+  <p>Our out-of-band status information is available via Twitter <a href="https://twitter.com/EmployeesORG">@EmployeesOrg</a>; bookmark or follow for emergency status updates.</p>
+  
+<ul>
+  <li>Accounts</li>
+  <ul><li>
+    User accounts have been receated from backup. SSH authorized_keys files and .forward files have been restored. We have some home directory content from an incomplete backup, we are still attempting to recover more from another backup.
+  </li>
+  </ul>
+  <li>Mail:</li>
+  <ul>
+    <li>Incoming and outgoing mail are up and running. <b>There may have been some mail lost.</b></li>
+    <li><a href="https://employees.org/mailman/listinfo" target="_blank">Mailman</a> - <span class="up">UP</span><sup>1</sup>
+    <li><a href="https://mail.employees.org/" target="_blank">Roundcube</a> (web mail) - <span class="up">UP</span><sup>4</sup></li>
+  </ul>
+  <li>DNS - <span class="up">UP</span>.</li>
+  <li>Web - <span class="up">User directories restored; most other services up</span><sup>2</sup></li>
+  <li>MySQL - <span class="up">UP</span><sup>3</sup></li>
+</ul>
+<p><sup>1</sup>
+<em>All lists and archives lost, please contact <a href="admin@employees.org">admin@employees.org</a> to have your list recreated</em>
+</p>
+<p><sup>2</sup>
+  <em>Web server (Apache) is running, but without virutal hosts and without user directories. User directories will work on Sunday (after a reboot to enable ACLs on the user filesystem).  You will need to restore the content from your personal backups and use 'webit' (described in the FAQ below) to set the permissions on the WWW directory. If you had any web sites other than www.employees.org hosted on cowbell, please contact <a href="admin@employees.org">admin@employees.org</a> to request your host be recreated and provide the virtual host configuation.</em>
+</p>
+<p><sup>3</sup>
+<em>All database content has been lost. We are still attempting to see what might be possible to restore, if anything. The <b>mysqlme</b> tool may be used to recreate user databases.</em>
+</p>
+  <p><sup>4</sup>
+    <em>Attachments in Roundcube are corrupted when downloaded; unable to resolve.  Please use IMAP to download attachments.</em>
+      </ul>
+</div>
+
+<div style="background-color: #ff9; padding: 5px 10px">
+<h2>NOTE</h2>
+<p>We remind users we do NOT back up user data and the disaster recovery plan is to wipe the system and start anew.  If this is not acceptable to you, you may have outgrown what Employees.Org offers and should consider a commercial service</p>
+
+
+<h3>From the employees.org FAQ:</h3>
+<h2>Lack of Backups and Disaster Recovery</h2>
+<p>User data on the employees.org Web servers are not backed up. You should maintain copies of your data elsewhere. Disaster recovery for employees.org will consist of reinstalling the system from scratch, <em>without</em> any user files.</p>
+</div>
+
+
+<h2>This is www.employees.org</h2>
+
+<p>
+  Questions / assistance, email: <a href="mailto:admin@employees.org">admin@employees.org</p>
+
+<!--
+<p>
+Beware: There are a couple broken known links below.
+</p>
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- for DNSSEC testing, added by dwing@employees.org -->
+<a hre="fhttp://prefetch.validatorsearch.verisignlabs.cmo"></a>
+
+<!-- header (full window width) -->
+<table border="0" cellpadding="0" cellspacing="0" id="header" class="silhouette-1">
+<tr>
+    <td id="logo" valign="bottom" rowspan="2">
+        </td>
+    <td id="site_search">
+        </td>
+  <td id="pad" valign="top"></td>
+</tr>
+<tr>
+    <td id="menu" colspan="2">
+</ul>    </td>
+  <td id="pad2" valign="top"></td>
+</tr>
+<tr>
+    <td colspan="3"><div></div></td>
+</tr>
+</table>
+<!-- end of header -->
+
+<div id="wrapper" style="width: 99%;">
+
+<div id="container">
+
+<table border="0" cellpadding="0" cellspacing="0" id="content">
+  <tr>
+
+    <td id="sidebar-left" class="sidebar sidebar-left" valign="top">
+    <div id="block-user-1" class="clear-block block block-user">
+</ul></div>
+</div>
+  </td>
+  
+  <td id="main-content" valign="top">
+      <div id="main">
+        <div id="cr8"></div>
+        <div class="tabs"></div>
+            <div class="node"> 
+    <table class="nodetitle">
+  <tr>
+    <td>
+      <h2 class="title"><a href="FAQ">Frequently Asked Questions</a></h2>
+      <span class="submitted"></span>
+      <span class="taxonomy"></span>
+    </td>
+  </tr>
+  </table>
+
+    <div class="content"><table border="0" cellspacing="0" cellpadding="0"><tr><td>
+<div id="toc"><strong>Table of Contents</strong>
+        <div><a href="#toc1">What is this IronPort Spam Firewall?</a></div>
+	<div><a href="#toc2">I can't get my mail.</a></div>
+	<div><a href="#toc3">I can't send my mail.</a></div>
+	<div><a href="#toc4">Basic commands like 'ls' don't work.</a></div>
+	<div><a href="#toc5">I can't create any files.</a></div>
+	<div><a href="#toc6">Can I set up virtual hosting?</a></div>
+	<div><a href="#toc7">FTP is turned off. How do I transfer files?</a></div>
+	<div><a href="#toc8">What is my URL to see my files on the web server?</a></div>
+	<div><a href="#toc9">Why can't I see my files from the web server? The server says Forbidden!</a></div>
+	<div><a href="#toc10">What permissions/owner/group should my web directories have?</a></div>
+	<div><a href="#toc11">My PHP scripts don't work!</a></div>
+	<div><a href="#toc12">My CGI scripts don't work!</a></div>
+	<div><a href="#toc13">Where is htpasswd for creating Apache password files?</a></div>
+	<div><a href="#toc15">Are new accounts being accepted?</a></div>
+	<div><a href="#toc16">Help!  I lost my Password - can I get it reset?</a></div>
+	<div><a href="#toc17">I no longer need my account, how can I get rid of it?</a></div>
+	<div><a href="#toc18">How do I log into employees.org</a></div>
+	<div><a href="#toc19">Can we install a particular Perl module?</a></div>
+	<div><a href="#toc20">How do I configure Dreamweaver to work with SSH?</a></div>
+	<div><a href="#toc21">What perl should I use?</a></div>
+	<div><a href="#toc22">What is Mailman?</a></div>
+	<div><a href="#toc23">How do I create a new mailing list.</a></div>
+	<div><a href="#toc24">How do I delete an existing mailing list.</a></div>
+	<div><a href="#toc25">Can I have a MySQL Database?</a></div>
+<!--	<div><a href="#toc26">Can I run MovableType on my Employees.org account?</a></div> -->
+	<div><a href="#toc27">Help!  I can't find the answer to my question here!</a></div>
+	<div><a href="#toc28">ssh fingerprints</a></div>
+</div>
+</td></tr></table>
+
+<div id="spamfilter"></div><br/>
+
+<h3 id="toc1">What is this IronPort Spam Firewall?</h3>
+ <p>All incoming mail is processed by an <a href="http://www.ironport.com/">IronPort</a> spam firewall.  It is configured to drop incoming mail that it determines is spam, and to mark messages it suspects are spam.  If you would prefer, instead, that it tag and deliver your spam, please email a request to <a href="mailto:admin@employees.org">admin</a>.</p>
+
+<div id="mail"></div><br/>
+
+<h3 id="toc2">I can't get my mail.</h3>
+<!-- <p>See <a class="" href="/docs/SSL-Howto.html">SSL-Howto</a></p> -->
+      <p>You can configure your email client (Thunderbird, Outlook,
+	Mail, etc.) to use <strike>either</strike>:
+	<ul>
+	  <li>
+	IMAPS to mail.employees.org port 993 (also called "IMAP with TLS")</li>
+	  <li><strike>POP3S to mail.employees.org port 995 (also called "POP3 with TLS")"</strike></li>
+	</ul>
+	We also operate a web-based mail at <a href="https://mail.employees.org/">https://mail.employees.org</a>.</p>
+
+<div id="mailrelay"></div><br/>
+
+<h3 id="toc3">I can't send my mail.</h3>
+      <p>Configure your mail user agent (Thunderbird, Outlook, etc.) to use mail.employees.org port 25, with TLS and "plain" authentication, using your username and password.  Only your username needs to be specified (not @employees.org).</p>
+      
+ <p>Many ISPs (Earthlink, for one), companies, and some hotels block access to external SMTP server from their networks.  This will make it impossible for you to use <a href="https://mail.employees.org/">mail.employees.org</a> as your outbound mail server.</p>
+
+<p>You can test connectivity by doing:</p>
+
+<p><pre>    telnet mail.employees.org 25
+</pre><br/> from your operating system's command line (OS X, use
+&quot;Terminal&quot;;<br/> Windows, use &quot;Start, Run,
+cmd.exe&quot;).</p>
+
+<p>If connections to tcp/25 are blocked, you can:</p>
+
+<ul>
+    <li>Try using our alternative mail submission ports, 465, 587 or 1025.  Test it first using 'telnet <a href="https://mail.employees.org/">mail.employees.org</a> 1025' or 'telnet <a href="https://mail.employees.org/">mail.employees.org</a> 587' and if it connects, configure your mailer to use that port.  The TCP/587 port requires TLS and STARTTLS; the TCP/1025 port requires STARTTLS.</li>
+</ul>
+
+<ul>
+    <li>(less preferred) send SMTP via a server inside your company, or send SMTP via your ISP's mail server.  Contact your company's IT department or your ISP's technical support for information on that server.  This is less preferred because it will be impossible for your email to be signed by DKIM using this method, increasing the likelyhood it will be rejected by the recipient's system.</li>
+</ul>
+
+<div id="path"></div><br/>
+
+<h3 id="toc4">Basic commands like 'ls' don't work.</h3>
+ <p>Your PATH doesn't include both '/bin' and '/usr/bin'. This wasn't required on Solaris, but is required on FreeBSD.</p>
+
+<p>You can update PATH by editing either '~/.profile' (if you use a shell like bash) or '~/.login' (if you use a shell like csh). If you're not sure, start with .login; we default to csh. The easiest editor to use on UNIX is pico:</p>
+
+<pre>   pico .login
+</pre><br/>
+<div id="files"></div><br/>
+
+<h3 id="toc5">I can't create any files.</h3>
+ <p>Disk quotas have been turned on, with a hard quota of 150 MB.  If you have more than 150 MB in your home area, you will not be allowed to create new files until you have freed up some disk space.  You can find out how much disk space you are using by typing the command:</p>
+
+<pre>   /usr/bin/quota -v
+</pre><br/>
+<div id="virthost"></div><br/>
+
+<h3 id="toc6">Can I set up virtual hosting?</h3>
+ <p>Yes, please email your request to <a href="mailto:admin@employees.org">admin</a></p>
+
+<div id="ftp"></div><br/>
+
+<h3 id="toc7">FTP is turned off. How do I transfer files?</h3>
+ <p>Use ssh-based tools like 'scp' or 'rsync' (with ssh).  On UNIX, ssh is available from <a href="http://openssh.org/">OpenSSH</a> and includes 'scp' and 'sftp'. For Windows, you can do ssh-based transfers with <a href="http://winscp.sourceforge.net/eng">WinSCP</a>.</p>
+
+<div id="webhomeurl"></div><br/>
+
+<h3 id="toc8">What is my URL to see my files on the web server?</h3>
+ <p>We use the Apache &quot;UserDir&quot; directive to point user URLs to the files.  The format for this is to append a  Tilde (&quot;~&quot;) followed by the account's username to the end of the host URL.  Thus the file:</p>
+
+<p><pre>  /users/joeuser/WWW/index.html
+</pre><br/>
+would be referenced as:</p>
+
+<p><pre>  http://www.employees.org/~joeuser/index.html
+</pre><br/>
+and:</p>
+
+<p><pre>  /users/joeuser/SWWW/index.html
+</pre><br/>
+would be referenced as:</p>
+
+<pre>  https://www.employees.org/~joeuser/index.html
+</pre><br/>
+<div id="index"></div><br/>
+
+<h3 id="toc9">Why can't I see my files from the web server? The server says Forbidden!</h3>
+ <p>The Apache installation on employees.org is configured to REQUIRE an index.html (or index.php, index.cgi, etc.) in a directory to show a web page for a given URL.  This means that users must take deliberate action to expose their data and are less likely to expose data by accident.  Yes, this is different from the default settings used in a lot of other Apache installations.</p>
+
+<div id="webperms"></div><br/>
+
+<h3 id="toc10">What permissions/owner/group should my web directories have?</h3>
+ <p>At the bottom of this section are instructions for using <em>webit</em>, which will adjust permissions.</p>
+
+<p>The web server accesses your files using <a href="http://www.freebsd.org/doc/handbook/fs-acl.html">file system ACLs</a>, which is indicated by a &quot;+&quot; in the directory permissions.</p>
+
+<p>This is an explanation of the ideal permissions for the user <em>example</em>.  These are the minimal permissions necessary.</p>
+
+<p>Your <em>/users</em> symlink should be owned by you. It doesn't matter what group or permissions:</p>
+
+<p><pre>&gt; ls -lad /users/example<br>lrwxr-xr-x  1 example example 21 May 31 23:15 /users/example -&gt; /export/homea/example</pre></p>
+
+<p>Your home directory should be owned by you, group owned by you, and at least executable by group, and have an ACL (&quot;+&quot;).  Your <em>WWW</em> directory (and <em>SWWW</em> directory, if you have one) should be owned by you, group owned by you, group readable and executable, and have an ACL (&quot;+&quot;).  The ACL can be viewed with the getfacl command, and should be the same for both your top-level directory and the WWW directory itself:</p>
+
+<p><pre>&gt; # your home directory<br>&gt; ls -lad /export/homeaa/example<br>drwx--x---+  40 example example 2.5K Jun 14 07:02 /export/homeaa/example<br/>
+&gt; # your WWW directory<br>&gt; ls -lad /users/example/WWW<br>drwxr-x---+  27 example example 1.5K Jun  8 18:01 WWW/<br>&gt; getfacl ~/WWW<br># file: /home/example<br># owner: example<br># group: example<br>user::rwx<br>group::---<br>group:www:r-x<br>mask::r-x<br>other::---</pre></p>
+
+<p>If any of these are broken, you can fix it yourself with the <em>webit</em> program located in &quot;/usr/local/bin/&quot;.  As its parameter, give <em>webit</em> the directory or files you need the permissions and group ownership changed on as an argument to <em>webit</em>.  For example, to fix your <em>WWW</em> and <em>SWWW</em> directories, enter the commands:</p>
+
+<p><pre>&gt; /usr/local/bin/webit -R ~/WWW<br>&gt; /usr/local/bin/webit -R ~/SWWW</pre></p>
+
+<div id="php"></div><br/>
+
+<h3 id="toc11">My PHP scripts don't work!</h3>
+      <p>We use the suPHP apache module to run PHP as the user.  The
+      typical problem is permissions; you can reset the permissions on
+      your account by
+      using <em>webit</em> <a href="/FAQ#webperms">described
+      above</a></p>
+
+<div id="cgi"></div><br/>
+
+<h3 id="toc12">My CGI scripts don't work!</h3>
+ <p>Make sure your CGI script ends in .cgi and outputs a valid <em>Content-Type:</em> header.  Check the files <br/>
+<pre>  /var/log/httpd/employees.org-error_log
+  /var/log/httpd/employees.org-access_log 
+  /var/log/httpd-suexec.log</pre><br/>
+for more information on your script action.  If you see an access log entry but not an error log entry, your script is most likely doing something wrong.  If you want your CGI scripts to end in another file extension, you can create a &quot;.htaccess&quot; in your web directory containing something along the lines of:</p>
+
+<p><pre>  AddHandler cgi-script .not-a-cgi
+</pre><br/>
+This will then cause files ending in .not-a-cgi to be executed as CGI scripts.</p>
+
+<div id="htpasswd"></div><br/>
+
+<h3 id="toc13">Where is htpasswd for creating Apache password files?</h3>
+ <p>'/usr/local/sbin/htpasswd'</p>
+
+<div id="newaccts"></div><br/>
+
+<h3 id="toc15">Are new accounts being accepted?</h3>
+ <p>New accounts are now being accepted.  The same <a class="" http://employees.org:80/policy.html">Operating Policy</a> as used before applies to the accounts.  Be sure to read the Operating Policy.  Most importantly, the total amount of disk space <b>PER SPONSOR</b> is 150MB.</p>
+
+<p>Create a new account by clicking <a href="https://www.employees.org/~admin/newacct.cgi">here</a>.</p>
+
+<div id="lostpassword"></div><br/>
+
+<h3 id="toc16">Help!  I lost my Password - can I get it reset?</h3>
+ <p>To request a password reset use the online form at <a href="https://www.employees.org/~admin/resetpw.cgi">Reset Password</a> and follow the instructions there.</p>
+
+<div id="nukeme"></div><br/>
+
+<h3 id="toc17">I no longer need my account, how can I get rid of it?</h3>
+ <p>First off - Thank You for not just abandoning the account!</p>
+
+<p>To request an account deletion, send mail to <a href="mailto:nukeme@employees.org">nukeme@employees.org</a> from either the Employees.org account or the account's sponsor.</p>
+
+<p>This will be sent to the humans currently handling account deletion.  You may be asked to confirm if you really want the account deleted.  The <em>nukeme</em> existed before the lost password facility and many folks requesting deletion are unaware of the password reset mechanism. The majority of the deletion requests are rescinded once the users learn of it.</p>
+
+<div id="ssh"></div><br/>
+
+<h3 id="toc18">How do I log into employees.org</h3>
+ <p>Employees.org currently consists of a single host - accordion.employees.org.  This is the same physical host as mail.employees.org, www.employees.org, etc., as well as the A record for just plain ol' employees.org.  If we start splitting services onto more hosts in the future, this situation could change.  However, after 10 years the shell host will still be employees.org.</p>
+
+<p>To login, you need an SSH client. Most UNIX variants have a built-in one called *ssh*. For Windows, we recommend a free client called <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty">Putty</a></p>
+
+<p>It is preferred that you use the SSHv2 protocol.  If you are using an old SSH client that only speaks SSHv1, be forewarned that you may see:</p>
+
+<p><pre>  Password:
+  Response:
+</pre><br/>
+If you have not configured your account to use OPIE, just hit return and you will then see a prompt like:</p>
+
+<p><pre>  foo@employees.org's password:
+</pre><br/>
+where you can then use your Employees.Org unix password.</p>
+
+<div id="perlmods"></div><br/>
+
+<h3 id="toc19">Can we install a particular Perl module?</h3>
+ <p>First, make sure you're using '/usr/local/bin/perl' rather than '/usr/bin/perl'. Then, if the module still doesn't appear to be installed, contact <a href="mailto:help@employees.org">help</a> to request it.</p>
+
+<div id="dreamweaver"></div><br/>
+
+<h3 id="toc20">How do I configure Dreamweaver to work with SSH?</h3>
+ <p>This is untested, but Steve Richey has pointed out the <a href="http://www.macromedia.com/support/dreamweaver/ts/documents/ssh.htm">instructions</a> at Macromedia's site.</p>
+
+<div id="perl"></div><br/>
+
+<h3 id="toc21">What perl should I use?</h3>
+ <p>'/usr/local/bin/perl'</p>
+
+<div id="mailman"></div><br/>
+
+<h3 id="toc22">What is Mailman?</h3>
+ <p>Mailman is a web-based mailing list management interface.</p>
+
+      <p>To administer your mailing list, go to the administration
+      interface found
+      at <a href="http://www.employees.org/mailman/admin/*LISTNAME*">http://www.employees.org/mailman/admin/<i>*LISTNAME*</i></a>
+      where <i>*LISTNAME*</i> is the name of your mailing list.  Your mailing
+      list subscribers can change their settings
+      at <a href="http://www.employees.org/listinfo/*LISTNAME">http://www.employees.org/listinfo/*LISTNAME</a>*.
+      These URLs are in List-* headers of each message sent through
+      the list, as well as at the message footer.</p>
+
+<div id="mailing-lists"></div><br/>
+
+<h3 id="toc23">How do I create a new mailing list.</h3>
+ <p>Send your request to <a href="mailto:admin@employees.org">admin</a> and the human behind it will create the list when they can get to it.  No guarantees on how long that may be (could be weeks).</p>
+
+<p>In your email, specify your preferred Mailing List address.  It is better if the Mailing List name is over 8 characters in length so it won't accidentally collide with the username space.  A good way to do this is to end the list name with &quot;-list&quot;, such as &quot;foohighschool-list@employees.org&quot;.</p>
+
+<p>You also need to say who the &quot;owner&quot; of the list is and this MUST be an @employees.org account.  You can add other E-mail addresses to administrate the list after it is created, but we need this information to track who is responsible for what mailing list.</p>
+
+<div id="delete-mailing-lists"></div><br/>
+
+<h3 id="toc24">How do I delete an existing mailing list.</h3>
+ <p>Send E-mail to <a href="mailto:admin@employees.org">admin</a> with the name of the list to be deleted.  The mailman administrators will check that the request is valid by asking the list administrator of the list in question for confirmation.  When confirmation is received, the mailman administrators will then delete the list.</p>
+
+<div id="mysql"></div><br/>
+
+<h3 id="toc25">Can I have a MySQL Database?</h3>
+ <p>We are now allowing MySQL databases again.  To create yourself a database, run the <em>mysqlme</em> located in &quot;/usr/local/bin/&quot;.  The program will create a MySQL user entry for your userid and then create a database for you with the name of your userid.  You can <br/>
+have more than one database by specifying a database name with the &quot;-db dbname&quot; option.  A database will then be created called &quot;userid_dbname&quot;.</p>
+
+<p>For example, if userid <em>john</em> wanted to create a second DB for his account to hold recipes, he could type:</p>
+
+<p><pre>  /usr/local/bin/mysqlme -db recipes
+</pre><br/>
+and the program would create a new database named <em>john_recipes</em> with userid <em>john</em> having appropriate rights.</p>
+
+<p>If you forget your userid's mysql password, you can force a reset of it with the program &quot;mysqlpwr&quot;.</p>
+
+<!--
+<div id="movabletype"></div><br/>
+
+<h3 id="toc26">Can I run MovableType on my Employees.org account?</h3>
+ <p>Yes, if you use version v3.14 or greater of MovableType.  On Dec. 15th, 2004, Employees.org was brought to a crawl by Comment Spammers attacking the comment facilities of MovableType.  As a result, any installation of MovableType on employees.org <b>MUST</b> be version 3.14 or later.  Details on MT3 can be found here:</p>
+
+<p><a href="http://www.movabletype.org/news/2004/12/movable_type_314_release.shtml">MovableType 3.14</a></p>
+
+<p>MT3 is now free for personal, limited use.   See the &quot;Limited Free Version&quot; available here:</p>
+
+<p><a href="http://www.movabletype.org/get_movable_type_personal.shtml">MT pricing</a></p>
+
+<p>Note that tricks like renaming mt-comments.cgi in older MovableType installations no longer work as the Comment Spammers have taught their tools to scrape pages to find the new CGI script name.  At this point, we must insist on upgraded installations.</p>
+
+<p>If you have an old MT installation that you no longer care about, please delete it.</p>
+
+<p>In an effort to reduce the CPU load caused by spammers, we restrict POSTs using various mechanisms.  This shouldn't affect legitimate MovableType users or legitimate commenting, but if it does please send email to <a href="mailto:admin@employees.org">admin</a> with the IP address and date/time (Pacific Time) of the legitimate user.</p>
+-->
+
+<div id="help"></div><br/>
+
+<h3 id="toc27">Help!  I can't find the answer to my question here!</h3>
+ <p>There is a mailing list of highly experienced employees.org users that have a broad variety of expertise that can help with your questions.  Send mail to <a href="mailto:help@employees.org">help@employees.org</a> with as much detail of your question as possible.  Note that the list has a limit on the size of mail it will accept.  Rather than send long files, such as log entries, you should save them to a file in your personal web space (under WWW/) and mail a link to the file in your message.</p>
+
+
+<h3 id="toc28">ssh fingerprints</h3>
+<pre>
+256 SHA256:Cr88eesO+JlhsiqCmRZPxSX+fDAH4dXhyiQyo38h2M4 employees.org (ED25519)
+2048 SHA256:yS42z7+UHA/nZwyQRM4gCeY2aU/S+sJRhoyaW4Mp0Mc employees.org (RSA)
+256 SHA256:xqhiHgo3wFXqRLpouycLtxZxTFybWDsfenqIr0WPvI0 employees.org (ECDSA)
+</pre>
+
+
+</div>
+  </div>
+        </div>
+  </td>
+
+  </tr>
+</table>
+
+</div><!-- end of div#container -->
+
+</div><!-- end of div#wrapper -->
+
+<div id="footer">Copyright &copy; 2004-2018 &bull;
+Please see our <a href="policy.html">operating policy</a> for more information.<div id="block-system-0" class="clear-block block block-system">
+</div>
+</div>
+</body>
+</html>
